@@ -22,7 +22,6 @@ main {
     width: 80vh;
     margin: 10px;
     border: 3px solid red;
-    display: flex;
     flex-wrap: wrap;
 }
 

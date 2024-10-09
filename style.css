@@ -11,28 +11,49 @@
 
 /* -------------------------- */
 main {
+    background-color: rgb(121, 25, 25);
     height: 100vh;
     width: 100vw;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#btn {
+    font-weight: bold;
+    width: 200px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    flex: 0 0 auto;
 }
 
 #container {
     box-sizing: content-box;
+    background-color: white;
+    width: 80vh;
+    /* height: 80vh; */
     margin: 10px;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     flex-wrap: wrap;
-    flex: 0 1 80vh;
+    flex: 0 0 80vh;
     justify-content: center;
+}
+
+#btn:hover {
+    background-color: white;
+    cursor: pointer;
 }
 
 /* -------------------------- */
 .square {
     height: calc(80vh / 16);
     width: calc(80vh / 16);
-    /* border: 1px solid black; */
+    border: 1px solid rgb(44, 43, 43);
 }
 
 .trail {
-    background-color: purple;
+    background-color: rgb(32, 32, 32);
 }

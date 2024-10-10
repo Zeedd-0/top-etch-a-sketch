@@ -11,3 +11,16 @@ description:
 ...
 
 skills:
+. pseudo selectors
+. flexbox
+. . justify-content
+. . align-items
+. . flex
+. . margin
+. functions
+. dom manipulation
+. event listener
+. arrow function
+. while
+. for loop
+. for each

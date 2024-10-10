@@ -1,7 +1,14 @@
 * {
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+body {
+    background-color: rgb(121, 25, 25);
+    height: 100%;
+    width: 100%;
 }
 
 /* -------------------------- */
@@ -9,15 +16,17 @@
     display: flex;
 }
 
+.block {
+    display: block;
+}
+
 /* -------------------------- */
 main {
-    background-color: rgb(121, 25, 25);
-    height: 100vh;
-    width: 100vw;
+    margin: 10px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 #btn {
@@ -26,17 +35,34 @@ main {
     height: 35px;
     border: none;
     border-radius: 5px;
-    box-shadow: 3px 3px rgb(0, 0, 0);
+    box-shadow: 3px 3px rgb(236, 45, 45);
     flex: 0 0 auto;
+}
+
+#options {
+    background-color: black;
+    width: 450px;
+    padding: 5px 25px;
+    border-radius: 15px;
+    color: rgb(226, 225, 225);
+    gap: 20px;
+}
+
+#options > * {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#options > *:nth-child(1) {
+    margin-right: auto;
+    font-weight: bold;
 }
 
 #container {
     box-sizing: content-box;
     background-color: white;
     width: 80vh;
-    /* height: 80vh; */
-    margin: 10px;
-    /* border: 3px solid red; */
     flex-wrap: wrap;
     flex: 0 0 80vh;
     justify-content: center;
@@ -51,9 +77,11 @@ main {
 .square {
     height: calc(80vh / 16);
     width: calc(80vh / 16);
-    border: 1px solid rgb(44, 43, 43);
+    border: 1px solid rgb(238, 238, 238);
 }
 
 .trail {
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(44, 43, 43);
+    opacity: 0.1;
 }
